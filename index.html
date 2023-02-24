@@ -76,7 +76,10 @@ rdfs: http://www.w3.org/2000/01/rdf-schema# swc: http://data.semanticweb.org/ns/
         <a><strong>Date of birth: </strong></a><a property="dbo:birthDate" datatype="xsd:date" content="2001-09-03"> September 03 <sup>rd</sup>, 2001. </a>
         </div>
         <div>
-        <a><strong>Place of birth: </strong></a><a property="dbo:placeOfBirth" rdfs:type = "Place" resource="https://www.colombes.fr/ville-de-colombes-3.html"> Colombes</a>
+        <a><strong>Place of birth: </strong></a><a type= "sch:PostalAdress" property="dbo:name" resource ="https://www.colombes.fr/ville-de-colombes-3.html">Colombes</a><a>, </a><a type= "sch:PostalAdress" property="dbo:adressLocality" resource ="https://www.hauts-de-seine.fr/">hauts-de-seine</a><a>, </a><a type= "sch:PostalAdress" property="dbo:adressRegion" resource ="https://www.iledefrance.fr/">Ile de France</a><a>, </a><a type= "sch:PostalAdress" property="dbo:adressCountry" resource ="https://www.france.fr/">France</a>
+        </div>
+        <div>
+        <a><strong>Nationality: </strong></a><a property="foaf:nationality">French.</a>
         </div>
       </div>
       <div class="col-md-5 offset-md-1">
